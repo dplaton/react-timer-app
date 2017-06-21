@@ -1,2 +1,2 @@
-Boiler plate for React apps
+Small timer application built with React
 ===
