@@ -10,18 +10,12 @@ var Nav = () => {
                     <li>
                         <IndexLink
                             to="/"
-                            activeClassName="active"
-                            activeStyle={{
-                            fontWeight: 'bold'
-                        }}>Timer</IndexLink>
+                            activeClassName="active-link">Timer</IndexLink>
                     </li>
                     <li>
                         <Link
                             to="/countdown"
-                            activeClassName="active"
-                            activeStyle={{
-                            fontWeight: 'bold'
-                        }}>Countdown</Link>
+                            activeClassName="active-link">Countdown</Link>
                     </li>
                 </ul>
 
