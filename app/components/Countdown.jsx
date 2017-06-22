@@ -8,6 +8,10 @@ var Countdown = React.createClass({
         return {count: 0, countdownStatus: 'stopped'}
     },
 
+    componentWillMount: function() {
+        console.log('Component did unmnount');
+    },
+
     componentDidUpdate: function (prevProps, prevState) {
         if (this.state.countdownStatus !== prevState.countdownStatus) {
             switch (this.state.countdownStatus) {
@@ -49,7 +53,7 @@ var Countdown = React.createClass({
 
     render: function () {
         var {count, countdownStatus} = this.state;
-        debugger;
+
         var renderControls = () =>{
             if (countdownStatus === 'stopped') {
                 return <CountdownForm onSetCountdown={this.handleSetCountdown}/>
