@@ -18,7 +18,8 @@ describe('handleSetCountdown', () => {
         timer.handleStatusChange('started');
 
         expect(timer.state.timerStatus).toBe('started');
-
+        expect(timer.state.count).toBe(0);
+            
         setTimeout(() => {
             expect(timer.state.count).toBe(2);
             done();
